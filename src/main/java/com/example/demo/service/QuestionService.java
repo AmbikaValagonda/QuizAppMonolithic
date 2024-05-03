@@ -46,12 +46,6 @@ public class QuestionService implements IQuestionService{
         return new ResponseEntity<>("success",HttpStatus.CREATED);
     }
 
-    public ResponseEntity<List<Question>> getQuestionsForQuiz(String categoryName, Integer numQuestions) {
-          //List<Question> questions = questionDao.findRandomQuestionsByCategory(categoryName, numQuestions);
-    	  //List<Question> questions = questionDao.findByCategory(categoryName);
-    	List<Question> questions = questionDao.findByTopic(categoryName, numQuestions);
-          return new ResponseEntity<>(questions, HttpStatus.OK);
-    }
-    
+
 
 }

@@ -10,7 +10,6 @@ public interface IQuestionService {
 	 public ResponseEntity<List<Question>> getAllQuestions();
 	 public ResponseEntity<List<Question>> getQuestionsByCategory(String category);
 	 public ResponseEntity<String> addQuestion(Question question);
-	 public ResponseEntity<List<Question>> getQuestionsForQuiz(String categoryName, Integer numQuestions);
 	 
 	 
 	 
